@@ -1,0 +1,48 @@
+<div class="col-md-8 col-md-2 mx-auto">
+  <div class="card shadow mb-md">
+    <div class="card-header">
+      <strong><%= @cafe[:name] %></strong>
+    </div>
+    <div class="card-body">
+      <%= image_tag @photo[:pc][:l], class: "card-img-top mb-sm" %>
+      <h5 class="card-title font-md"><span class="linear">ジャンル</span></h5>
+      <p class="card-text"><%= @genre[:name] %></p>
+      <h5 class="card-title font-md"><span class="linear">営業時間</span></h5>
+      <p class="card-text"><%= @cafe[:open] %></p>
+      <h5 class="card-title font-md"><span class="linear">住所</span></h5>
+      <p class="card-text"><%= @cafe[:address] %></p>
+      
+      <div id="cafemap"></div>
+
+      <h5 class="card-title font-md"><span class="linear">アクセス</span></h5>
+      <p class="card-text"><%= @cafe[:access] %></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  let cafemap;
+  const lat = gon.lat;
+  const lng = gon.lng; // コントローラーで定義したインスタンス変数を変数に代入
+
+function initMap(){
+  // 現在位置の特定
+  LatLng = new google.maps.LatLng(lat, lng);
+  cafemap = new google.maps.Map(document.getElementById('cafemap'), {
+      center: LatLng,
+      zoom: 15
+    });
+  
+  marker = new google.maps.Marker({
+    position: LatLng, // マーカーを立てる位置を指定
+    map: cafemap, // マーカーを立てる地図を指定
+  });
+
+}
+</script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=<%="#{ENV['GOOGLE_MAP_API']}"%>&callback=initMap&libraries=&v=weekly"
+  async>
+</script>

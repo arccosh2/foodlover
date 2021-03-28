@@ -1,0 +1,48 @@
+body, footer {
+  background-color: $dDarkBlue;
+}
+
+.navbar {
+  background-color: $dPink;
+}
+
+h1, h2, h3, h4 {
+  color: $dPink;
+}
+
+.submit {
+  background-color: $dPink;
+  border: $dPink;
+}
+
+.card {
+  border: $dDarkBlue;
+}
+
+.flickr_pagination {
+  color: $dPink;
+
+  & a {
+    color: $dPink;
+
+    &:hover, &:focus {
+      border-color: $dPink;
+      background:$dPink;
+    }
+  }
+}
+
+.btn {
+  border: 1px dashed $dPink;
+  color: $dPink;
+
+  &.letter-spacing:hover {
+    background-color: $dPink;
+  }
+}
+
+footer {
+  border-top: 1px dashed $dGrey;
+  color: $dGrey;
+}
+

@@ -1,0 +1,76 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: $cWhite;
+  border: 1px dashed $cRed;
+  font-weight: 600;
+  padding: 10px 50px;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: $cRed;
+  text-decoration: none !important;
+
+  &.float:hover {
+    background-color: $cBlack;
+    color: $cWhite;
+    box-shadow: 5px 5px 10px 0 #555;
+  }
+
+  &.filled {
+    background-color: #555;
+    color: $cWhite;
+    box-shadow: 5px 5px 10px 0 #555;
+
+    &:hover {
+      background-color: $cWhite;
+      color: $cBlack;
+      box-shadow: none;
+    }
+  }
+
+  &.letter-spacing:hover {
+    background-color: $cRed;
+    letter-spacing: 3px;
+    color: $cYellow;
+  }
+
+  &.shadow {
+    box-shadow: none;
+
+    &:hover {
+      transform: translate(-2.5px, -2.5px);
+      box-shadow: 5px 5px 0 0 rgba(73, 73, 73, 0.5);
+    }
+  }
+
+  &.solid {
+    box-shadow: 2px 2px 0 0 #555;
+    border-radius: 7px;
+
+    &:hover {
+      transform: translate(2px, 2px);
+      box-shadow: none;
+    }
+  }
+}
+
+.btn-index {
+  display: inline-block;
+  background-color: $cWhite;
+  border: 1px solid #555;
+  border-radius: 1em;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin: 10px 10px;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #555;
+}
+
+#submit {
+  color: $cYellow;
+  background-color: $cRed;
+  border: $cRed;
+  border-radius: 5px;
+}

@@ -1,0 +1,31 @@
+
+.nav-back {
+  background-color: $cRed;
+}
+
+.navbar {
+  @extend .nav-back;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+  transition: ease 0.4s;
+    &__brand {
+      // margin-top: 0.3vh;
+      height: 85px;
+      width: 135px;
+    }
+  }
+
+  .nav-link {
+    color: $cYellow;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: $cPink;
+    }
+  }

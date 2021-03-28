@@ -1,0 +1,224 @@
+body {
+  font-family: 'Montserrat', 'DotGothic16', sans-serif;
+  min-height: 100vh;
+  color: #5e5e5e;
+  padding-top: 70px;
+}
+
+main {
+  flex: 1;
+  min-height: 80vh;
+}
+
+a {
+  text-decoration: none;
+  color: $cPink;
+
+  &:hover {
+    text-decoration: none;
+    color: $cPink;
+  }
+
+}
+
+img {
+  vertical-align: bottom;
+}
+
+#map, #cafemap {
+  width: 220px;
+  height: 170px;
+  margin: 0 auto;
+}
+
+#distances {
+  color: #555;
+}
+
+.selection {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 40px;
+  color: $cRed;
+  text-align: center;
+  font-weight: 500;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 10px;
+  color: #555;
+  text-align: left;
+  font-weight: bold;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-lr {
+  font-size: 18px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+.mt-sm {
+  margin-top: 16px !important;
+}
+
+.mt-md {
+  margin-top: 26px !important;
+}
+
+.mt-lg {
+  margin-top: 80px !important;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-md {
+  margin-bottom: 40px !important;
+}
+
+.mb-lr {
+  margin-bottom: 50px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.mrl-sm {
+  margin-right: 15px;
+  margin-left: 15px;
+  letter-spacing: 0.1em;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.pl-sm {
+  padding-left: 10px !important;
+}
+
+.pr-sm {
+  padding-right: 10px !important;
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+  position: relative;
+}
+
+#container {
+  position: relative;
+  z-index: 2;
+}
+
+#content {
+  margin-top: 40px; 
+}
+
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  @extend .font-sm;
+}
+
+
+.messages {
+  margin-top: 50px;
+}
+
+.left-align {
+  text-align: left !important;
+}
+
+.center-align {
+  text-align: center !important;
+}
+
+.right-align {
+  text-align: right !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+ul {
+  line-height: 1.5em;
+  color: #555;
+}
+
+table {
+  margin: 20px auto;
+  border: 4px double #ddd;
+  width: 100%
+}
+
+.type-item {
+  background-color: rgb(231, 187, 65);
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+th {
+  @extend .font-md;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  display: block;
+}
+
+td {
+  @extend .font-md;
+  color: #555;
+  padding: 10px 40px;
+  display: block;
+  text-align: center;
+}
+
+.card-wrap {
+  margin: 40px 0px;
+}
+
+strong {
+  padding: 8px;
+}
+
+.round-img{
+  border-radius:50%;
+}

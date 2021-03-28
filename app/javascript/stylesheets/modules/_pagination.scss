@@ -1,0 +1,54 @@
+.flickr_pagination {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0.3em;
+  color: $cRed;
+  cursor: default;
+
+  & a, & span, & em {
+    padding: 0.2em 0.5em; 
+    border-radius: 5px;
+  }
+
+  & a {
+    border: 1px solid $cYellow;
+    color: $cRed;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      border-color: $cRed;
+      background:$cRed;
+      color: $cYellow;
+    }
+  }
+
+  &.disabled {
+    color: #aaaaaa;
+  }
+
+  &.current {
+    font-style: normal;
+    font-weight: bold;
+    color: $cRed;
+  }
+
+  &.page_info {
+    color: #aaaaaa;
+    padding-top: 0.8em;
+  }
+
+  &.previous_page, &.next_page {
+    border-width: 2px;
+  }
+
+  &.previous_page {
+    margin-right: 1em;
+  }
+
+  &.next_page {
+    margin-left: 1em;
+  }
+ }
+
+
