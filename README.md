@@ -41,6 +41,7 @@ macOS Big Sur 11.2.3
 - 一覧画面：検索結果の飲食店を一覧表示する。
 <img width="475" alt="スクリーンショット 2021-03-28 20 28 17" src="https://user-images.githubusercontent.com/64732680/112750670-e91a0e80-9004-11eb-8a4f-34cf06c759ea.png">
 - 詳細画面：検索結果の飲食店の詳細を表示する。
+<img width="475" alt="スクリーンショット 2021-03-28 20 28 54" src="https://user-images.githubusercontent.com/64732680/112750708-241c4200-9005-11eb-997a-57b1d594cf5d.png">
 
 ### 使用しているAPI,SDK,ライブラリなど
 - ホットペッパーグルメサーチAPI
